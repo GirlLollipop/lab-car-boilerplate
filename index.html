@@ -5,38 +5,296 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
   <title>LabCar</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body >
     <header class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container menu">
+        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
       <img src="assets/images/logoForma.png" alt="">
-      <button type="button" class="btn btn-default navbar-btn col-md-offset-8">Sign in</button>
-      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+      <button type="button" class="btn btn-default navbar-btn col-md-offset-7">Viaja</button>
+      <button type="button" class="btn btn-default navbar-btn">Conduce</button>
+      <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#miModal">Inicia sesión</button>
     </div>
   </nav>
     </header>
-    <section class=cover>
+    <section class="container-fluid">
+      <section class= "row cover" >
+        <div class="pull-right form-cover">
+          <div class="form2-cover">
+    <!– Clase mobile–>
+            <div class="form-mobile" id="oculto">
+              <h1>Comienza a viajar<br>
+                <div class="textcover2-mobile">
+                  <h4>con</h4>
+                </div>
+                <div class="textcover2-mobile">
+                  <img src="assets/images/logoBlanco.png" alt="">
+                </div>
+            </div>
+            <div class="text-cover1">
+              <h1>Disfruta del viaje <br>
+              Eres dueño de tu tiempo</h1>
+            </div>
+            <div class="text-cover2">
+              <div class="textcover2">
+                <h4>Viaja con</h4>
+              </div>
+              <div class="textcover2">
+                <img src="assets/images/logoBlanco.png" alt="">
+              </div>
+            </div>
+            <div class="btn-register">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#miModal2">REGÍSTRATE</button>
+            </div>
+            <div class="text-cover3">
+              <div class="star">
+                <h5 class="">____________________</h5>
+                <h5 class="hr">o bien</h5>
+                <h5>____________________</h5>
+              </div>
+            </div>
+            <div class="btn-driver">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#miModal3">Conviértete en un conductor</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row app">
+        <div class=" row app2">
+          <div class="iphone col-md-offset-1">
+            <img src="assets/images/iPhone6Plus.png" alt="">
+          </div>
+          <div class="text-app2 col-md-offset-1">
+            <h2>Descargar la nueva app</h2>
+            <p >La versión actualizada de LabCar
+            está llena de nuevas funciones para
+          llegar a donde quieras aún más fácil
+        y rápido.</p>
+        <p>Con sólo tocar un botón, un auto
+        llega justo a su ubicación. Súbete y
+      no te preocupes: tu conductor sabe
+    exactamente donde ir.</p>
+          </div>
+        </div>
+      </section>
+      <section class="row drive" id="drive">
+        <div class="drive-form pull-right">
+          <div class="text-drive">
+            <h2>Conduce cuando quieras</h2>
+            <p>LabCar es una opción flexible para alcanzar
+            tus metas financieras</p>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#miModal3">Conviértete en un conductor</button>
+          </div>
+        </div>
+      </section >
+      <section class="row app" id="ride">
+        <div class="form-rates">
+            <h2>Tarifas</h2>
+            <h4>Consulta las tarifas LabCar aquí</h4>
+            <form>
+    <div class="form-group form-rate">
+      <img src="assets/images/shape.png" alt="">
+      <label for="exampleInputEmail1"></label>
+      <input type="input" class="form-control partida" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su punto de partida">
+      <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group form-rate">
+      <img src="assets/images/shape2.png" alt="">
+      <label for="exampleInputPassword1"></label>
+      <input type="input" class="form-control destino" id="exampleInputPassword1" placeholder="Ingrese su destino">
+    </div>
+    <button type="submit" class="btn btn-primary">¡TRAZAR RUTA!</button>
+  </form>
+  </div>
+<div id="map"></div>
+      </section>
+      <footer class="row">
+        <div class="row col-md-offset-1 footer">
+          <img src="assets/images/logoBlanco.png" alt="">
+          <hr>
+          <div class="list-foot">
+            <div class="list" id="list-one">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-apple" aria-hidden="true"></i></li>
+                <li><i class="fa fa-play" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div class="list" id="list-two">
+              <ul>
+                <li>Viaja</li>
+                <li>Conduce</li>
+                <li>Ciudades</li>
+                <li>Ciudades</li>
+                <li>Entregas</li>
+                <li>Cómo funciona?</li>
+                <li>Países</li>
+                <li>Seguridad</li>
+                </ul>
+            </div>
+            <div class="list" id="list-three">
+              <ul>
+                <li>Oportunidades</li>
+                <li>Nuestra historia</li>
+                <li>Api de LabCar</li>
+                <li>Eventos</li>
+                <li>Desarrolladores</li>
+                <li>Servicios</li>
+                <li>Laboratoria</li>
+                <li>Coders</li>
+                </ul>
+            </div>
+            <div class="list" id="list-four">
+              <ul>
+                <li><img src="assets/images/appstore.png" alt="logo appstore"></li>
+                <li><img src="assets/images/enBadgeWebGeneric.png" alt="logo googleplay"></li>
+              </ul>
+            </div>
+            <hr>
+            <i class="fa fa-copyright copy" aria-hidden="true"></i>
+            <h6 class="copy">2017 LabCar technologies Inc.</h6>
+          </div>
+        </div>
+      </footer>
+      <!–modales–>
+      <!– inicio de sesión–>
+      <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+        <div class="avatar">
+          <img src="assets/images/cat.jpg" width="200px" height="200px" alt="avatar inicio sesión">
+        </div>
+			</div>
+			<div class="modal-body">
+        <div class="form-group init-sesion">
+  <label for="usr"></label>
+  <input type="text" class="form-control" id="usr" placeholder="Username">
+</div>
+<div class="form-group init-sesion">
+  <label for="pwd"></label>
+  <input type="password" class="form-control" id="pwd" placeholder="Password">
+</div>
+<button type="button" class="btn btn-default btn-modal1">LOGING</button>
+			</div>
+      <div class="forget">
+        <h4>Forgot Password</h4>
+        <a href="#">Click Here</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!–resgistrate–>
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal2">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<button type="button" name="button" class="cta">Ya tienes una cuenta?</button>
+			</div>
+      <div class="text-modal2">
+        <h5>O CREA UNA CUENTA NUEVA</h5>
+      </div>
+			<div class="modal-body body-modal2">
+        <form>
+          <div class="form-row">
+    <div class="col name">
+      <input type="text" class="form-control name2" placeholder="Nombre">
+    </div>
+    <div class="col name">
+      <input type="text" class="form-control first-name" placeholder="Apellido">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" placeholder="Correo Electrónico"></label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Correo Electrónico">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress" placeholder="Teléfono"></label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Teléfono">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputPassword4" placeholder="Contraseña"></label>
+    <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity" ></label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+    </div>
+  </div class="btn-modal2">
+  <button type="submit" class="btn btn-primary ">Enviar</button>
+</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!– Conviertete en conductor–>
+<div class="modal fade" id="miModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+      <div class="modal-body body_driver">
+        <h5>¿Tienes vehículo de 4 puertas?</h5>
+        <select class="form-control select-driver">
+  <option>Si</option>
+  <option>No</option>
+</select>
+<h5>Marca del vehículo</h5>
+<select class="form-control select-driver">
+  <option>Elige la marca del vehículo</option>
+  <option>Chevrolet</option>
+  <option>Fiat</option>
+  <option>Honda</option>
+  <option>VW</option>
+</select>
+<h6>¿No ves tu vehículo en la lista? Envía un correo electrónico a</h6>
+<a href="">sociosmdb@uber.com</a>
+<h5>Modelo</h5>
+<select class="form-control select-driver">
+<option>Modelo 1</option>
+<option>Default select</option>
+<option>Default select</option>
+<option>Default select</option>
+</select>
+<h5>Año</h5>
+<select class="form-control select-driver">
+<option>2017</option>
+<option>2018</option>
+<option>2016</option>
+</select>
+<h5>Número de la matrícula</h5>
+<select class="form-control select-driver">
+<option>Número de matrícula</option>
+</select>
+<h6>La información de la marícula ayuda a los clientes a identificar tu vehículo</h6>
+<button type="button" name="button" class="btn-modal3">Enviar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    </section>
-
-
-
-
-
-
-
-  <script
+<script
  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
  crossorigin="anonymous"></script>
- <script type="text/javascript" src="js/app.js" >
-
- </script>
+ <script type="text/javascript" src="js/app.js" ></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQWrcsAQL1dt-Msmd1KZWLTSnNOEmNRO8&callback=initMap"
+    async defer></script>
 </body>
 </html>

@@ -1,13 +1,495 @@
 /* Los estilos de tu proyecto */
-.container-fluid {
-  background-color: purple;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+footer {
+  background-color: #2b2b2b;
+  width: auto;
+  height: 70vh;
+}
+
+header {
+  background: white;
+}
+
+i {
+  margin-right: 1vh;
+}
+
+li {
+    list-style-type: none;
+  margin-top: 2vh;
+}
+
+::-moz-placeholder {
+   color: white;
+}
+
+.app {
+  background-color: #f7b617;
+  width: auto;
+  height: 65vh;
+}
+
+.app2 {
+  width: 83.33%;
+  height: 55vh;
+  border: 1px solid white;
+  margin-top: 5vh;
+}
+
+.text-drive > .btn-default {
+  background-color: #FFC720;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 1vh;
+}
+
+.btn-driver {
+  margin-top: 2vh;
+}
+
+.btn-primary {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 20%;
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+}
+
+.btn-primary:holder {
+  background: #FFC720;
+}
+
+.btn-register {
+  margin-top: 3%;
+}
+
+.btn-register > .btn-default {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 1vh;
+}
+
+.btn-driver > .btn-default {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 1vh;
+}
+
+.copy {
+  display: inline-block;
 }
 
 .cover {
-  background-image: url("../assets/images/taxi.jpg");
-  width: 100%;
-  height: 1000px;
-  background-size: 100% auto;
+  background-image: url("../assets/images/taxi2.jpg");
+  width: auto;
+  height: 100vh;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.drive {
+  background-image: url(../assets/images/conduce.jpg);
+  width: auto;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drive-form {
+  width: 33.32%;
+  background-color: rgba(0, 0, 0, .5);
+  height: 50vh;
+}
+
+.footer {
+  width: 83.33%;
+}
+
+.footer > img {
+  margin-top: 9vh;
+}
+
+.form-control {
+  width: 60%;
+  margin-left: 10%;
+  background-color:
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.form-rate > .form-control {
+  background: #ffcc33;
+  width: 60%;
+  margin-left: 10%;
+  background-color:
+  border: 1px solid white;
+  border-radius: 10px;
+  }
+
+.form-cover {
+  background-color: #f7b617;
+  width: 41.65%;
+  height:40vh;
+  margin-top: 38vh;
+  }
+
+.form2-cover{
+  margin: 6%;
+  margin-left: 10%;
+  padding-bottom: 5%;
+}
+
+.form-rates {
+  width: 33.32%;
+  margin-left: 8.33%;
+  margin-top: 13vh;
+}
+
+.form-rates > form {
+  margin-top: 4vh;
+}
+
+.form-rates > h4 {
+  margin-top: 3vh;
+}
+
+.form-rates #map {
+  display: inline-block;
+}
+
+.iphone {
+  display: inline-block;
+}
+
+.iphone > img {
+  margin-top: -300px;
+}
+
+.list {
+  display: inline-block;
+}
+
+.menu {
+  margin-top: 4vh;
+}
+
+.menu > button {
+  border: none;
+  margin-right: 2vh;
+  background: none;
+}
+
+.navbar {
+ height: 15vh;
+}
+
+.text-app2 {
+ width: 8.33%;
+ margin-top: 5vh;
+}
+
+.text-app2 > h3 {
+  font-weight: bolder;
+}
+
+.text-app2 > p {
+  margin-top: 4vh;
+  font-size: 2.1rem;
+}
+
+.textcover2 {
+  display: inline-block;
+    margin-top: 2%;
+}
+
+.textcover2 > img{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.text-app2 {
+  width: 33.32%;
+  display: inline-block;
+}
+
+.text-drive {
+  color: white;
+  font-weight: bolder;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 20%;
+}
+
+.text-drive > p {
+  font-size: 2vh;
+  font-weight: normal;
+  margin-top: 2vh;
+}
+
+.rates {
+  background-color: #f7b617;
+  width: auto;
+  height: 90vh;
+}
+
+.star {
+  margin-top: 2vh;
+}
+
+.star > h5   {
+  display: inline-block;
+}
+
+.hr {
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+/*mapa*/
+#map {
+       height: 50vh;
+       width: 41.65%;
+       margin-left: 50%;
+       margin-top: -28%;
+       border-style: double;
+       border-width: 4px;
+}
+
+#list-one, #list-two, #list-three {
+  margin-right: 15%;
+}
+
+ #list-one > ul > li {
+   display: inline-block;
+ }
+
+/*stilos modales*/
+.avatar > img {
+  border: 2px solid #f7b617;
+  margin-left: 32%;
+}
+
+.btn-modal1 {
+  background-color: #FFC720;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 1vh;
+  margin-left: 42%;
+}
+
+.btn-modal3 {
+  width: 60%;
+  margin-top: 2vh;
+  background: #ffcc33;
+  border-radius: 15px;
+  border: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 2vh;
+  margin-left: 20%;
+}
+
+.cta {
+  background-color: black;
+  border-radius: 15px;
+  border-style: none;
+  padding: 2vh;
+  font-size: 2rem;
+  margin-left: 2%;
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
+.forget {
+  margin-top: 0 auto;
+  text-align: center;
+  background:#ffcc33;
+}
+
+.forget > h4 {
+  margin-top: 0;
+  color: black;
+}
+.init-sesion {
+  margin-left: 12%;
+}
+
+.body-modal2 {
+  background-color: #ffcc33;
+}
+
+.modal-body {
+    background: #ffcc33;
+}
+
+.modal-header {
+  background-color: #FFD700;
+}
+
+.modal2 {
+  background-color: #ffcc33;
+}
+
+.name {
+  display: inline-block !important;
+  margin-left: 10%;
+}
+
+.text-modal2 > h5 {
+  color: black;
+  text-align: center;
+}
+
+.modal-body > h5 {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.modal-body > h6 {
+  color: black;
+  text-align: center;
+}
+
+.modal-body > a {
+  margin-left: 40%;
+}
+
+.modal-body > select {
+  margin-left: 20%;
+}
+
+/*mobile-desktop*/
+.fa-bars {display: none;}
+#oculto {display: none;
+visibility: hidden;}
+
+/*mobile*/
+@media only screen and (max-width: 768px) {
+    footer {
+     height: 65vh;
+    }
+    .footer {
+      width: 95%;
+      margin: 0;
+      margin-left: 2%;
+    }
+    .footer > img {
+      margin-left: 1%;
+      margin-top: 3vh;
+    }
+    .navbar-btn {
+      display: none;
+    }
+
+    .fa-bars {
+      color: black;
+      display: inline-block;
+    }
+
+    .form2-cover {
+      display: none;
+    }
+
+    #oculto {
+     display: block;
+     visibility: visible;
+   }
+    .text-app2 {
+      display: none;
+    }
+
+    .iphone {
+      margin-top: 50vh;
+      margin-left: 17%;
+    }
+
+   .app {
+     height: 85vh;
+   }
+    .app2 {
+      margin-left: 8%;
+      height: 70vh;
+    }
+
+    .btn-primary {
+      font-size: 3rem;
+      margin-top: 5vh;
+    }
+
+
+    .drive-form {
+      width: 100%;
+    }
+    .form-cover {
+      width: 80%;
+    }
+    .form-rates {
+      width: 100%;
+      margin-left: 10%;
+      font-size: 3rem;
+    }
+    .form-rates > h2 {
+      display: block;
+      font-size: 4rem;
+    }
+
+    .form-rates > h4 {
+      display: block;
+      font-size: 3rem;
+    }
+
+    .form-rates > form {
+      display: block;
+    }
+
+    .form-rate > .form-control {
+      background: #ffcc33;
+      width: 60%;
+      margin-left: 10%;
+      background-color:
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 3vh;
+      }
+
+    #list-three {
+      display: none;
+    }
+
+
+    #map {
+      display: block;
+      margin: 0;
+      margin-left: 10%;
+      margin-top: 8vh;
+      width: 80%;
+    }
+
+    #ride {
+      height: 138vh;
+    }
+
+
+
+
 }
